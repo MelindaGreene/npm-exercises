@@ -1,6 +1,6 @@
 "use strict";
 const $ = require('jquery');
-
+const item = require('./practice.js');
 $(document).ready(function () {
 
     $ ('#nodes').click(function(){
@@ -11,12 +11,14 @@ $(document).ready(function () {
         $('#nodes3').slideUp();
     });
 
+    $('body').css('color','powderblue');
 
     const sayHello = (name) =>{
         console.log("hello")
     };
 
     sayHello();
+    console.log(item.color);
 });
 
 
